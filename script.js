@@ -7,7 +7,7 @@ function validate(event) {
 
     if(username == ["username"] && password == ["password"]) {
         alert("Login Successful");
-        window.location.href = "https://ambitious-field-04a184b03.2.azurestaticapps.net/";
+        window.location.href = "https://ambitious-field-04a184b03.2.azurestaticapps.net/login.html";
     } else if (username == ["username1"] && password == ["password1"]) {
         alert("Login Successful");
         window.location.href = "https://ambitious-field-04a184b03.2.azurestaticapps.net/consumerindex.html";
