@@ -15,7 +15,14 @@ $(document).ready(function() {
       //Run the get asset list function
       getVideos();
 
-  }); 
+  });
+
+  $("#retImages").click(function(){
+
+    //Run the get asset list function
+    getVideos();
+
+});
 
    //Handler for the new asset submission button
   $("#subNewForm").click(function(){
