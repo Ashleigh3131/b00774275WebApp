@@ -1,112 +1,70 @@
-<!doctype html>
-<html lang="en" ng-app="Dashboard">
-  <head>
-    <meta charset="UTF-8">
+<!-- <!DOCTYPE html>
+<html lang="en">
 
-    <title>Asset Track</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login-page.css">
+  <script defer src="login-page.js"></script>
+</head>
 
-      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-      <script type="text/javascript" src="JS/bootstrap.js"></script>
-      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
-      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
-
-      <script type="text/javascript" src="JS/app.js"></script>
-
-  </head>
-  
-  <body>
-
-    <div  class="container">
-
-        <!--Header-->
-        <div class="row align-items-start">
-            <div class="col-2"  ></div>
-
-            <div class="col-8" style="text-align: center;">
-              <h3>Video Share</h3>
-            </div>
-
-            <div class="col-2"  ></div>
-        </div>
-
-        <!--New Asset Box-->
-        <div class="row align-items-start">
-            <div class="col-2"  ></div>
-
-            <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
-              <p>Add Video</p>
-
-              <form style="font-size: 10pt;" id="newAssetForm">
-                <div class="mb-3">
-                  <label for="title" class="form-label">Movie Title</label>
-                  <input type="text" class="form-control" id="title">
-                </div>
-
-                <div class="mb-3">
-                  <label for="ageRating" class="form-label">Age Rating</label>
-                  <input type="string" class="form-control" id="ageRating">
-                </div>
-
-                <div class="mb-3">
-                  <label for="genre" class="form-label">Genre</label>
-                  <input type="string" class="form-control" id="genre">
-                </div>
-
-                <div class="mb-3">
-                  <label for="creatorUserName" class="form-label">User Name</label>
-                  <input type="text" class="form-control" id="creatorUserName">
-                </div>
-
-                <div class="mb-3">
-                  <label for="creatorID" class="form-label">User Id</label>
-                  <input type="string" class="form-control" id="creatorID">
-                </div>
-
-                <div class="mb-3">
-                  <label for="producer" class="form-label">Producer</label>
-                  <input type="string" class="form-control" id="producer">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="publisher" class="form-label">Publisher</label>
-                  <input type="string" class="form-control" id="publisher">
-                </div>
-
-                <div class="mb-3">
-                  <label for="UpFile" class="form-label">File to Upload</label>
-                  <input type="file" class="form-control" id="UpFile">
-                </div>
-            
-                <button type="button" id="subNewForm" class="btn btn-primary">Submit</button> <br/><br/>
-                
-              </form>
-            </div>
-
-            <div class="col-2"  ></div>
-        </div>
-
-        <!-- view Asset Area-->
-        <div class="row align-items-start">
-            <div class="col-2"  ></div>
-
-            <div class="col-8" style="text-align: left;" >
-              <div style="padding:5px;">
-                <button  id = "retImages" type="button" class="btn btn-primary">View Videos</button>
-              </div>
-
-              <div id="ImageList">
-
-                <h4>Please click the view Video button if you wish to view videos on the system.</h4>
-
-              </div>
-            </div>
-
-            <div class="col-2"  ></div>
-        </div>
-
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
     </div>
-
-    <a href="login.html"><button>Go To Login</button></a>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
   
-  </body>
+  </main>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+        <div class="box">
+            <div class="heading"></div>
+            <form class="login-form" id="login" onsubmit="validate(event)">
+            <div class="field">
+                <input
+                id="username"
+                type="text"
+                placeholder="Phone number, username, or email"
+                />
+                <label for="username">Phone number, username, or email</label>
+            </div>
+
+            <div class="field">
+                <input id="password" type="password" placeholder="password" />
+                <label for="password">Password</label>
+            </div>
+
+            <button class="login-button" title="login">Log In</button>
+
+            <div class="separator">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+            </div>
+            </form>
+        </div>
+
+        </div>
+    </body>
+    <script src="script.js"></script>
 </html>
